@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+body{
+    background-color:rgb(233, 184, 184);
+    font-family: 'Roboto', sans-serif;
+
+}
+/* <nav id="navbar">
+        <div class="logo">
+            <h1>Dreamy Cake</h1>
+        </div>
+        <ul class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </ul>
+    </nav> */
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 15px 70px 15px 30px;
+}
+nav .menu a.selected{
+    border-bottom: 3px solid white;
+    
+}
+nav .menu a:hover{
+    color:pink;
+    border-bottom: 3px solid pink;
+
+}
+nav .logo{
+font-weight: 600;
+font-size:24px;
+text-transform: uppercase;
+color: white;
+
+}
+
+nav .logo h1
+{
+    letter-spacing: 2px;
+}
+.menu{
+    
+    width:300px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight:400;
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    transform: 150ms ease color,150ms ease color border-bottom;
+}
+/* <div class="section">
+            <div class="text">
+                <h1>Cakuza</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sint repellendus nemo qui commodi fugiat repellat sed deserunt.
+                    Placeat consequuntur assumenda maxime similique, atque eveniet eum saepe vero accusamus dolore.</p>
+            </div>
+            <img src="cake.png">
+        </div>   */
+
+
+.section {
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 30px 0px 30px;
+    
+ 
+}
+.section .text h1{
+font-size: 50px;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.section .text p{
+font-size: 18px;
+letter-spacing: 0.5px;
+color:blueviolet;
+margin-bottom: 30px;
+
+
+}
+
+.section h1{
+    margin:0px;
+    color:purple;
+}
+.section span{
+    color:white;
+}
+.section img{
+    width: 40%;
+    height: auto;
+}
+.curve{
+    width: 100%;
+    z-index:-1;
+    position: absolute;
+    height: 325px;
+}
+
+
+.section a{
+    background: white;
+    color: darkmagenta;
+    /* padding:10px 20px; */
+    font-size:20px;
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 250ms ease-in all;
+    box-shadow: 0 0 12px 1px rgba(97, 0, 111, 0.2);
+}
+.section a:hover{
+    box-shadow: 0 0 22px 3px rgba(97, 0, 111, 0.4);
+
+}
